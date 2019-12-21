@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 
-<!-- Title in tab. -->
+<!-- Title in tab -->
 <title>Jonathan Kaminski</title>
 
-<!-- Define character set. -->
+<!-- Define character set -->
 <meta charset="UTF-8">
 
-<!-- For all devices / screen sizes. -->
+<!-- For all devices / screen sizes -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
@@ -21,13 +21,32 @@ font-family: Arial, Helvetica, sans-serif;
 .header {
 padding: 25px;
 text-align: center;
-background: #71777f;
+background: #484b4e;
 color: white;
 }
 
 <!-- Specific element -->
 .header h1 {
 font-size: 70px;
+}
+
+<!-- Column container -->
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+
+<!-- Columns themselves -->
+.main {
+flex: 70%;
+background-color: white;
+padding: 20px;
+}
+
+.side {
+flex: 30%;
+background-color: #f1f1f1;
+padding: 20px;
 }
 
 </style>
@@ -38,6 +57,15 @@ font-size: 70px;
 <div class="header">
 <h1>Jonathan Kaminski</h1>
 <p>Jonathan Kaminski's personal website.</p>
+</div>
+
+<div class="row">
+<div class="main">
+<h1>About Me</h1>
+</div>
+<div class="side">
+<h1>Here are some of the things I have worked on.</h1>
+</div>
 </div>
 
 </body>
